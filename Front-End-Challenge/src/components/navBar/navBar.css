@@ -1,7 +1,7 @@
 @import "../../colors.css";
 
 #navBar{
-    min-height: 10%;
+    min-height: 5%;
     min-Width: auto;
     background-color: var(--blue-1);
     display: flex;
@@ -12,6 +12,7 @@
 #navBar #logo{
     position: absolute;
     left: 1.5%;
+    top: 2.8%;
     width: 11vw;
 }
 

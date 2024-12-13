@@ -1,9 +1,13 @@
 #home {
   width: 100%;
-  height: 100vh; /* Asegura que ocupe toda la pantalla visible */
+  height: 200vh; /* Asegura que ocupe toda la pantalla visible */
   background-image: url("./assets/desktop.jpeg");
+  background-position: top; /* Centra la imagen */
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; /* Centra la imagen */
+  display: flex;
+  flex-direction: column;
+  
 }
 
 
