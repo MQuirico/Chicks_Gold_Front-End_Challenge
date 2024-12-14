@@ -1,0 +1,42 @@
+@import "../../colors.css";
+
+#filtersSearch{
+    width: 70vw;
+    max-width: 70vw;
+    height: 20vh;
+    max-height: 20vh;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%
+}
+
+#filtersSearch #title{
+    font-size: 4.2vh;
+    position: relative;
+    left: 4%
+}
+
+#filtersSearch #filters{
+    width: 95%;
+    min-height: 40%;
+    justify-content: space-between;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    bottom: 21%;
+    position: relative;
+    align-items: center;
+    border: none
+}
+
+#filtersSearch #filters select, input{
+    background-color: var(--blue-1 0.6);
+    color: white;
+    height: 4.5vh
+}
+
+#filtersSearch #filters input{
+    margin-top: 0.5%
+}

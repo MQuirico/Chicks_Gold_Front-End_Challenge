@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { NavBar, Footer } from './components'
+import { NavBar, Footer, Filters, CardsBox } from './components'
 import './App.css'
 
 function App() {
@@ -7,6 +6,8 @@ function App() {
   return (
     <div id="home">
       <NavBar />
+      <Filters />
+      <CardsBox />
       <Footer />
     </div>
   )
