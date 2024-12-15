@@ -1,18 +1,21 @@
 @import "../../colors.css";
 
+@media (min-device-width: 1024px){
 #navBar{
-    min-height: 5%;
-    min-Width: auto;
-    background-color: var(--blue-1);
+    min-height: 4%;
+    min-Width: 100%;
+    background-color: var(--blue-2);
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-self:flex-start;
+
 }
 
 #navBar #logo{
     position: absolute;
-    left: 1.5%;
-    top: 2.8%;
+    left: 1.9%;
+    top: 3.2%;
     width: 11vw;
 }
 
@@ -32,7 +35,7 @@
 }
 
 #navBar #buttons button{
-    background-color: var(--blue-1);
+    background-color: var(--blue-2);
 }
 
 #navBar #currencyCart{
@@ -46,7 +49,7 @@
 }
 
 #navBar #currencyCart button{
-    background-color: var(--blue-1);   
+    background-color: var(--blue-2);   
 }
 
 #navBar #signIn{
@@ -57,3 +60,4 @@
     left: 90%
 }
 
+}

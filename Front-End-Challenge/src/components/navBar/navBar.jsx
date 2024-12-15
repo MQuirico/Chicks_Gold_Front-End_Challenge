@@ -3,6 +3,8 @@ import logo from "../../assets/chicks-logo-large.svg"
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaUserAlt } from "react-icons/fa";
+import { useMediaQuery } from '@mui/material';
+
 
 
 export default function NavBar () {
@@ -14,6 +16,8 @@ export default function NavBar () {
         "SWAP",
         "SELL"
     ]
+
+    const isMobile = useMediaQuery("(max-device-width: 480px) and (orientation: portrait)")
 
     return(
         <nav id="navBar">

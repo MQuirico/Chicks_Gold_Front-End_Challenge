@@ -20,7 +20,7 @@ export default function Filters (){
                     label="Select a game"
                     icon={<BiSolidJoystick 
                         style={{
-                            color: "orange",
+                            color: "gray",
                             alignSelf: "center",
                             fontSize: "4vh"
                         }}

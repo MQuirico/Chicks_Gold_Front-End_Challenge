@@ -1,0 +1,11 @@
+#cardsArea{
+  width: 70vw;
+  max-width: 70vw;
+  height: 133vh;
+  max-height:133vh ;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}

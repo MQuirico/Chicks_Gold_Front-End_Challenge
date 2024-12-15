@@ -15,7 +15,8 @@
 #filtersSearch #title{
     font-size: 4.2vh;
     position: relative;
-    left: 4%
+    left: 4%;
+    bottom: 10%
 }
 
 #filtersSearch #filters{
@@ -31,12 +32,11 @@
     border: none
 }
 
-#filtersSearch #filters select, input{
+#filtersSearch #filters  input{
     background-color: var(--blue-1 0.6);
     color: white;
-    height: 4.5vh
-}
-
-#filtersSearch #filters input{
-    margin-top: 0.5%
+    height: 4.5vh;
+    font-size: 1.7vh;
+    margin-top: 0.5%;
+    border-radius: 7px;
 }

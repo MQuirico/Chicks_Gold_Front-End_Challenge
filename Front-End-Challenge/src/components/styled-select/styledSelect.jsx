@@ -1,4 +1,4 @@
-import "./styledSelect.css"
+
 export default function StyledSelect ({icon, label, data = [], width = "10vw", height = "auto"}){
     return (
         <fieldset 
@@ -10,7 +10,8 @@ export default function StyledSelect ({icon, label, data = [], width = "10vw", h
             border: "none",
             ailgnItems: "center",
             width: width,
-            height: height
+            height: height,
+            fontFamily: "system-ui, -apple-system, sans-serif"
         }}
         >
             <legend
@@ -30,7 +31,9 @@ export default function StyledSelect ({icon, label, data = [], width = "10vw", h
                 borderRadius: "9px",
                 border: "none",
                 outline: "none",
-                boxShadow: "none"
+                boxShadow: "none",
+                fontSize: "1.7vh",
+                color: "white"
             }}
             >
                 {data.map((item, index) => 

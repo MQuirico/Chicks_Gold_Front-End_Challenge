@@ -1,0 +1,26 @@
+@import "../../colors.css";
+#cardsBox{
+    align-self: center;
+    border-radius: 7px;
+    width: 78vw;
+    height: 160vh;
+    position: absolute;
+    top: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue-2-1);
+    border: 1px var(--blue-4) solid
+}
+
+#cardsBox #topArea{
+    width: 95%;
+    display: Flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cardsBox #topArea #perPageAndTotal{
+    font-size: 1.7vh;
+    align-self: center;
+}
