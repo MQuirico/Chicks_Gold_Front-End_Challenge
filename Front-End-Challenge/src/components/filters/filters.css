@@ -69,7 +69,7 @@
     }
   }
   
-  @media (max-device-width: 520px) and (orientation: portrait) {
+  @media (max-device-width: 700px) and (orientation: portrait) {
     #filtersSearch {
       width: 99vw;
       min-width: 99vw;

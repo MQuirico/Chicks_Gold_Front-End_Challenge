@@ -5,8 +5,8 @@ import { useMediaQuery } from "@mui/material";
 import { products } from "../../data/data,";
 
 export default function CardsArea() {
-  const isTablet = useMediaQuery("(min-width: 700px) and (max-width: 1200px)");
-  const isPhone = useMediaQuery("(max-width: 600px)");
+  const isTablet = useMediaQuery("(min-width: 800px) and (max-width: 1200px)");
+  const isPhone = useMediaQuery("(max-width: 700px)");
   let itemsPerPage;
 
 if (isTablet) {

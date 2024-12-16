@@ -24,7 +24,7 @@
 }
 }
 
-@media (max-device-width: 520px) and (orientation: portrait) {
+@media (max-device-width: 700px) and (orientation: portrait) {
   #cardsArea {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

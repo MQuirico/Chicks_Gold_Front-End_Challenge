@@ -18,7 +18,7 @@ export default function NavBar () {
         "SELL"
     ]
 
-    const isMobile = useMediaQuery("(max-device-width: 520px) and (orientation: portrait)")
+    const isMobile = useMediaQuery("(max-device-width: 700px) and (orientation: portrait)")
 
     return(
         <nav id="navBar">

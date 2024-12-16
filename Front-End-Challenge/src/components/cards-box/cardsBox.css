@@ -45,7 +45,7 @@
   }
   
   /* Media query for mobile devices (portrait) */
-  @media (max-device-width: 520px) and (orientation: portrait) {
+  @media (max-device-width: 700px) and (orientation: portrait) {
     #cardsBox {
       width: 95vw;
       min-height: 150vh;
