@@ -182,3 +182,124 @@
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
   }
+
+  @media (max-device-width: 1200px) and (orientation: landscape) {
+    #footer {
+      height: auto;
+      padding: 2vh 0;
+    }
+  
+    #footer #section1 {
+      height: auto;
+      padding: 2vh 0;
+    }
+  
+    #footer #section1 #payMethods {
+      width: 90%;
+      font-size: 2.5vh;
+    }
+  
+    #footer #section1 #payMethods #creditCards img {
+      max-width: 5%;
+    }
+  
+    #footer #section2 {
+      height: auto;
+      padding: 2vh 0;
+    }
+  
+    #footer #section2 #social {
+      width: 90%;
+      font-size: 3vh;
+    }
+  
+    #footer #section2 #siteLinks {
+      width: 90%;
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      
+    }
+  
+    #footer #section2 #siteLinks #chicksGold, #support, #legal, #trustpilot {
+      width: 10%;
+      margin-bottom: 2vh;
+      position: relative;
+      right: 10vw
+    }
+
+    #footer #section2 #allRights{
+      position: relative;
+      top: 6vh
+    }
+
+  }
+  
+  @media (max-device-width: 520px) and (orientation: portrait) {
+    #footer{
+      height: 30%;
+      
+    }
+
+    #footer #section1 #payMethods{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #footer #section1 #payMethods #creditCards{
+      position: absolute;
+      left: 14vh;
+    }
+
+    #footer #section1 #payMethods #creditCards img{
+      height: 4vh;
+      min-height: 4vh;
+      max-height: 4vh;
+      width: 4vh;
+      min-width: 4vh;
+      max-width: 4vh;
+    }
+
+    #footer #section1 #payMethods #currencies {
+      position: absolute;
+      top: 13vh;
+      right: 20vh
+    }
+  
+    #footer #section1 #payMethods #text{
+      position: absolute;
+      top: 16vh;
+    }
+
+    #footer #section2 #social{
+      position: absolute;
+      bottom: 48vh;
+      height: 10vh
+    }
+
+    #footer #section2 #siteLinks{
+      display:flex;
+      flex-direction: row;
+      position: absolute;
+      right: 30vw
+    }
+
+    #footer #section2 #siteLinks > * {
+      width: 20%;
+      margin-bottom: 3vh;
+      flex-wrap: wrap;
+    }
+  
+    #footer #section2 #siteLinks #trustpilot {
+      max-width: 100%;
+    }
+
+    #footer #section2 #allRights{
+      position: absolute;
+      top: 80vh;
+      right: 20vw
+    }
+  }
+  
+  

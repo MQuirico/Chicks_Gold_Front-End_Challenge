@@ -9,3 +9,26 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 8px;
 }
+
+@media (max-device-width: 1200px) and (orientation: landscape) {
+  #cardsArea {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2vh;
+  }
+
+  #pagination{
+    position:absolute;
+    bottom: 7vh;
+    left: 20vw
+}
+}
+
+@media (max-device-width: 520px) and (orientation: portrait) {
+  #cardsArea {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3vh;
+  }
+}

@@ -1,8 +1,10 @@
 @import "../../colors.css";
+
 #cardsBox{
     align-self: center;
     border-radius: 7px;
     width: 78vw;
+    max-width: 78vw;
     height: 160vh;
     position: absolute;
     top: 38%;
@@ -24,3 +26,31 @@
     font-size: 1.7vh;
     align-self: center;
 }
+
+@media (max-device-width: 1200px) and (orientation: landscape) {
+    #cardsBox {
+      width: 90vw;
+      top: 45%;
+      height: 110vh
+    }
+  
+    #cardsBox #topArea {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #cardsBox #topArea #perPageAndTotal {
+      margin-bottom: 2vh;
+    }
+  }
+  
+  /* Media query for mobile devices (portrait) */
+  @media (max-device-width: 520px) and (orientation: portrait) {
+    #cardsBox {
+      width: 95vw;
+      min-height: 150vh;
+      height: 150vh;
+      top: 32%;
+    }
+  }
+    

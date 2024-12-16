@@ -1,5 +1,6 @@
 import "./navBar.css"
 import logo from "../../assets/chicks-logo-large.svg"
+import favicon from "../../assets/chicks_gold_favicon.jpg"
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaUserAlt } from "react-icons/fa";
@@ -17,14 +18,14 @@ export default function NavBar () {
         "SELL"
     ]
 
-    const isMobile = useMediaQuery("(max-device-width: 480px) and (orientation: portrait)")
+    const isMobile = useMediaQuery("(max-device-width: 520px) and (orientation: portrait)")
 
     return(
         <nav id="navBar">
 
             <img 
             id="logo" 
-            src={logo}
+            src={isMobile ? favicon : logo}
             />
 
             <div 

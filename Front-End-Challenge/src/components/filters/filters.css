@@ -1,6 +1,7 @@
 @import "../../colors.css";
 
-#filtersSearch{
+
+    #filtersSearch{
     width: 70vw;
     max-width: 70vw;
     height: 20vh;
@@ -40,3 +41,46 @@
     margin-top: 0.5%;
     border-radius: 7px;
 }
+
+
+@media (max-device-width: 1200px) and (orientation: landscape) {
+    #filtersSearch {
+      width: 90vw;
+      height: auto;
+      top: 15%;
+    }
+  
+    #filtersSearch #title {
+      font-size: 3vh;
+      left: 0;
+      text-align: center;
+      margin-bottom: 2vh;
+    }
+  
+    #filtersSearch #filters {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    #filtersSearch #filters > * {
+      width: 45%;
+      margin-bottom: 2vh;
+    }
+  }
+  
+  @media (max-device-width: 520px) and (orientation: portrait) {
+    #filtersSearch {
+      width: 99vw;
+      min-width: 99vw;
+      top: 15%;
+    }
+  
+    #filtersSearch #title {
+      font-size: 2.5vh;
+    }
+  
+    #filtersSearch #filters > * {
+      width: 100%;
+    }
+ }

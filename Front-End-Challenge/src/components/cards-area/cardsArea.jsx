@@ -1,18 +1,27 @@
 import { useState } from "react";
 import "./cardsArea.css";
 import ProductCard from "../DLC-card/DLC-card";
+import { useMediaQuery } from "@mui/material";
 import { products } from "../../data/data,";
 
 export default function CardsArea() {
-  const itemsPerPage = 15; // 3 rows * 5 columns
+  const isTablet = useMediaQuery("(min-width: 700px) and (max-width: 1200px)");
+  const isPhone = useMediaQuery("(max-width: 600px)");
+  let itemsPerPage;
+
+if (isTablet) {
+  itemsPerPage = 6;
+} else if (isPhone) {
+  itemsPerPage = 3;
+} else {
+  itemsPerPage = 15;
+}
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Calcular los productos que deben mostrarse en la página activa
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const productsToRender = products.slice(startIndex, endIndex);
 
-  // Manejar el cambio de página
   const handlePageChange = (direction) => {
     if (direction === "next" && currentPage * itemsPerPage < products.length) {
       setCurrentPage(currentPage + 1);
@@ -28,12 +37,12 @@ export default function CardsArea() {
           <ProductCard product={product} key={index} />
         ))}
       </div>
-      <div className="pagination">
-        <button onClick={() => handlePageChange("prev")} disabled={currentPage === 1}>
+      <div id="pagination">
+        <button id="btnPrev" onClick={() => handlePageChange("prev")} disabled={currentPage === 1}>
           Previous
         </button>
-        <span>Page {currentPage}</span>
-        <button onClick={() => handlePageChange("next")} disabled={currentPage * itemsPerPage >= products.length}>
+        <span id="curPage">Page {currentPage}</span>
+        <button id="btnNext" onClick={() => handlePageChange("next")} disabled={currentPage * itemsPerPage >= products.length}>
           Next
         </button>
       </div>
